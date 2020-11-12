@@ -1,0 +1,15 @@
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://unsplash.com/photos/bTN-zKFy9uA);">
+  <div class="container">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<ul>
+ <% @cocktail.doses.each do |dose| %>
+<li><%= dose.description %> <%= dose.ingredient.name %> <%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?"} %></li>
+<% end %>
+</ul>
+
+<%= link_to "Go back to cocktail list", cocktails_path %>
+<%= link_to "Add doses", new_cocktail_dose_path(@cocktail) %>
