@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+$gray: #F4F4F4;
+$spacer: 8px;
+
+body {
+  background: $gray; // Using this variable
+}
+
+.grid_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    width: 100%;
+}
+
+a {
+    color: rgb(88, 6, 6);
+    text-decoration: none;
+}
