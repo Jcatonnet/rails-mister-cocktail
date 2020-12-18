@@ -1,10 +1,12 @@
 .small-container {
     margin-top: auto;
     margin-bottom: auto;
+    margin: auto;
     justify-content: center;
     align-items: start;
-    min-height: 100vh;
+    // min-height: 100vh;
     padding: 10vh 50px 2vh 50px;
     text-align: center;
+    width: 70%
 }
 

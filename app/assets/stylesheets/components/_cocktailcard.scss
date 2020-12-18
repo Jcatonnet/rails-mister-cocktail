@@ -1,21 +1,25 @@
 .cocktail_card{
     background-size: cover;
     background-position: center;
-    height: 250px;
+    
+    height: 400px;
+    width: 330px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 22px;
-    color: rgb(88, 6, 6);
+    color: rgb(240, 240, 240);
     font-weight: bolder;
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
     width: 30%;
     text-decoration: none;
     position: relative;
     top: 0;
+    margin-bottom: 20px;
   transition: top ease 0.5s;
+  cursor: pointer;
 }
 
 .cocktail_card:hover {

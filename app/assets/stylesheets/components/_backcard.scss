@@ -1,0 +1,119 @@
+.cocktail_card{
+    background-size: cover;
+    background-position: center;
+    
+    height: 400px;
+    width: 330px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    color: rgb(240, 240, 240);
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    width: 30%;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  transition: top ease 0.5s;
+}
+
+.cocktail_card:hover {
+    top: -10px;
+}
+
+
+.card-trip-img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+.card-trip { 
+    background-size: cover;
+    background-position: center;    
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    color: rgb(240, 240, 240);
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.card-trip-back { 
+    background-size: cover;
+    background-position: center;    
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    color: rgba(145, 12, 12, 0.753);
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    background-color: white ;
+
+};
+
+
+
+.card-trip h3 {
+ color: rgba(145, 12, 12, 0.753);
+ margin: 6px;
+ font-weight: bolder;
+}
+
+.card-trip-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    height: 190px;
+    font-size:18px;
+}
+
+.card-trip h2 {
+    font-size: 16px;
+    justify-content: center;
+    color: #1e45c799;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.card-trip p {
+    font-size: small;
+    color: #15800899;
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+ 

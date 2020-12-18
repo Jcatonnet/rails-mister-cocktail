@@ -1,20 +1,62 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1596463989140-3b600dab72e5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvY2t0YWlsc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
-<div class="container">
+<div class="small-container">
 <h1>Envie d'un cocktail simple et teeeeellement bon ?</h1>
     <p>Retrouver vos cocktails préférés, testé et approuvé !</p>
 
 </div>
 </div>
    <div class="small-container">
+   
+       <div style="text-align: -webkit-center;"> <%= form_tag cocktails_path, method: :get do %>
+      <div class="searchcocktail d-flex mb-5 w-50 text-align-center">
+         <%= text_field_tag :query,
+         params[:query],
+         class: "form-control",
+         placeholder: "Find a cocktail"
+         %>
+         <%= submit_tag "Search", class: "btn-search" %>
+      </div>
+      <% end %>
+      </div>
+
+
+
       <%= link_to new_cocktail_path, class: "btn-cocktail" do %>
       Add your awesome cocktail
       <% end %>
 
       <div class="d-flex flex-row justify-content-between align-items-center flex-wrap w-100 mt-5">
       <% @cocktails.each do |cocktail| %>
-         <%= link_to cocktail_path(cocktail), class: "text-decoration-none cocktail_card" do %>
-            <%= cocktail.name %>
-         <% end %>
+      
+      <div class="flip-container"  ontouchstart="this.classList.toggle('target');">
+         <div class="flipper">
+           <div class="front">
+            <div class="cocktail_card w-100" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+               <%= cocktail.name %>    
+            </div>
+           </div>
+
+           <div class="back">
+               <div class="card-trip-back">
+                  <div class="card-trip-img">
+                     <div class="boat-img rounded"><%= cl_image_tag cocktail.photo.key, height: 200, width: 330 %>
+                      <h3><strong><%= cocktail.name.capitalize %></strong></h3>
+                     </div>
+                  </div>
+
+                  <div class="card-trip-infos">
+                     <div style="text-align: left; margin-top: 15px;">
+                     <% cocktail.doses.each do |dose| %>
+                        <li><%= dose.description %> <%= dose.ingredient.name %></li>
+                     <% end %>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- back content -->
+           </div>
+         </div>    
+      </div>     
       <% end %>
       </div>
 </div>  
