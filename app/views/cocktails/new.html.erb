@@ -1,6 +1,15 @@
+
+<div class="small-container">
+<div class="card_gray justify-content-center p-3 my-5 h-100">
 <h3>Create your cocktail</h3>
 <%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
+    <div class="justify-content-center w-100 mt-5">
+     <div style="text-align: initial"> <%= f.input :name, placeholder: "Bloody Marry spicy" %></div>
+ <div style="text-align: initial"> <%= f.input :photo, as: :file %></div>
+  </div>
+  <div class="btn-cocktail" style="margin:auto">
+    <%= f.submit "Lets'go ", class: "remove_submit_style"%>
+  </div>
 <% end %>
+</div>
+</div>

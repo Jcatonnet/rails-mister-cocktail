@@ -1,0 +1,25 @@
+.card_gray {
+    // width: 100%;
+    // height: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 12px 16px, rgba(0, 0, 0, 0.04) 0px 0px 8px;
+    border-radius: 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .card_gray h3 {
+    color: rgba(145, 12, 12, 0.75);
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+  }
+
+  .remove_submit_style {
+    background: none;
+    border: none;
+    color: unset !important;
+  }
